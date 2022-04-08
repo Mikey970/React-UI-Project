@@ -1,38 +1,192 @@
-.App {
+.container {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+}
+body {
+  background-color: rgb(232, 231, 231);
+}
+.headerTxt {
+  font-family: "Fjalla One", sans-serif;
+  margin-left: 38%;
+  border-bottom: 2px solid white;
+  border-radius: 1px;
+  padding: 5px;
+}
+.newHeader {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.topBar {
+  width: 110%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: black;
+  margin-bottom: 80px;
+  color: white;
+
+  margin-top: -30px;
+  margin-left: -9px;
+  border-left: 20px black solid;
+  border-right: 20px black solid;
+  border-radius: 5px;
+}
+.p-text {
+  font-family: "Fjalla One", sans-serif;
+  font-size: large;
+  color: black;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  border-bottom: 1px solid black;
+  border-bottom-width: 25%;
+}
+a {
+  color: lightblue;
+}
+.btcDesc {
+  padding-top: 0px;
+  padding-bottom: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+  display: flex;
+}
+.buttonItem {
+  height: 50px;
+  width: 250px;
+  background-color: lightgray;
+  color: black;
+  border: 2px solid black;
+}
+.linkItem {
+  text-decoration: none;
+  font-size: 300%;
+  color: black;
+  font-weight: bolder;
+  font-family: "Fjalla One", sans-serif;
+}
+.buttonItem:active {
+  background-color: black;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.listItem {
+  display: inline;
+}
+.buttonList {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 12%;
+  margin-right: 25%;
+  margin-bottom: 0px;
+}
+.sliderBox {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  height: 500px;
+  width: 1000px;
+  background-color: black;
+  border: 2px black solid;
+  border-radius: 3px;
+  justify-content: space-between;
+  position: sticky;
+}
+
+.leftButton {
+  color: black;
+}
+.rightButton {
+  display: flex;
+  background-color: black;
+  color: white;
+  justify-content: flex-end;
+  height: 100%;
+}
+@media only screen and (max-width: 1024px) {
+  body {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .container {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .sliderBox {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  .btcDesc {
+    padding-top: 50px;
+    font-size: small;
+    width: 100%;
+    height: 100%;
+  }
+  .buttonList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttonItem {
+    height: 50px;
+    width: 100%;
+  }
+  .bitcoin {
+    display: flex;
+    margin-top: -10%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 1580px) and (max-width: 1670) {
+  .buttonList {
+    margin-left: 50%;
+  }
+  .bitcoin {
+    margin-top: -600px;
+  }
+}
+@media only screen and (min-width: 1790px) and (max-width: 2000px) {
+  .buttonList {
+    margin-left: 22%;
+    margin-right: 25%;
+  }
+  .bitcoin {
+    margin-top: -10px;
+  }
+}
+@media only screen and (min-width: 2500px) and (max-width: 3000px) {
+  .buttonList {
+    margin-left: 29%;
+    margin-right: 25%;
+  }
+  .bitcoin {
+    margin-top: -150px;
+    margin-left: 25px;
+  }
+}
+@media only screen and (min-width: 2050px) and (max-width: 2300px) {
+  .buttonList {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .bitcoin {
+    margin-top: -400px;
+  }
+}
+@media screen and (min-width: 3800px) {
+  .buttonList {
+    margin-left: 36%;
+    margin-right: 25%;
+  }
+  .bitcoin {
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 90px;
   }
 }
